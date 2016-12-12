@@ -14,4 +14,6 @@ fn file_contents () -> String {
 fn main() {
     let result = row::find_possible_triangles(file_contents());
     println!("Result: {}", result);
+    let result_c = column::find_possible_triangles(file_contents());
+    println!("Result: {}", result_c);
 }
