@@ -1,6 +1,6 @@
 extern crate day3;
 
-use day3::find_possible_triangles;
+use day3::{row, column};
 use std::io::prelude::*;
 use std::fs::File;
 
@@ -12,6 +12,6 @@ fn file_contents () -> String {
 }
 
 fn main() {
-    let result = find_possible_triangles(file_contents());
+    let result = row::find_possible_triangles(file_contents());
     println!("Result: {}", result);
 }
